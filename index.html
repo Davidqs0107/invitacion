@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/title.png" type="image/png">
+    <title>David & Marioly - ¡Nos Casamos!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="names">David & Marioly</h1>
+            <p class="tagline">¡Nos Casamos!</p>
+            <p class="date">26 de Marzo, 2026</p>
+            <div class="divider"></div>
+        </div>
+    </header>
+
+    <!-- Sección de Música -->
+    <section class="music-section">
+        <div class="music-content">
+            <div class="music-icon">🎵</div>
+            <h3 class="music-title">Nuestra Canción</h3>
+            <p class="music-subtitle">Escucha la melodía que acompaña nuestra historia</p>
+            <div class="audio-player">
+                <audio id="weddingAudio" controls>
+                    <source src="assets/music/Accidentally-In-Love-From-Shrek-2-48k.m4a#t=15" type="audio/mp4">
+                    <source src="assets/music/Accidentally-In-Love-From-Shrek-2-48k.m4a#t=15" type="audio/mpeg">
+                    Tu navegador no soporta el reproductor de audio.
+                </audio>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Fotos -->
+    <section class="gallery">
+        <h2>Nuestros Momentos</h2>
+        <div class="gallery-container">
+            <button class="gallery-btn prev" aria-label="Anterior">&#8249;</button>
+            <div class="gallery-track" id="galleryTrack">
+                <!-- Las imágenes se cargarán dinámicamente desde JavaScript -->
+            </div>
+            <button class="gallery-btn next" aria-label="Siguiente">&#8250;</button>
+        </div>
+    </section>
+    <section class="venue">
+        <div class="venue-content">
+            <p class="descripcion">"Con la certeza de que el amor es el lenguaje universal que une nuestras almas, hemos
+                decidido dar el
+                paso
+                mas importante de nuestra historia y sellar nuestro compromiso frente a quiénes mas amamos"</p>
+        </div>
+    </section>
+
+
+    <!-- Nuestras Familias -->
+    <section class="families">
+        <h2>Con la bendición de Dios, nuestros Padres y Padrinos</h2>
+        <h2>Te invitamos a nuestra union civil</h2>
+        <div class="family-profiles">
+            <div class="profile">
+                <div class="profile-img">F&A</div>
+                <p class="profile-name">Freddy Quiroz y Asunta Saavedra</p>
+                <p class="profile-role">Padres del Novio</p>
+            </div>
+            <div class="profile">
+                <div class="profile-img">J&M</div>
+                <p class="profile-name">Juan Pablo Nogales y Mirian Rivera</p>
+                <p class="profile-role">Padres de la Novia</p>
+            </div>
+
+            <div class="profile">
+                <div class="profile-img">A&L</div>
+                <p class="profile-name">Alfredo Quiroz y Maria Luiza Soliz</p>
+                <p class="profile-role">Padrinos civil</p>
+            </div>
+        </div>
+    </section>
+    <!-- Información del Lugar -->
+    <section class="venue">
+        <h2>El Lugar</h2>
+        <div class="venue-content">
+            <h4>📍 ANA MARIA EVENTOS SUR</h4>
+            <p class="address">Lugar de la celebración</p>
+            <a href="https://maps.app.goo.gl/hoADiVs6LoXVnsgm7" target="_blank" class="map-link">Ver en Google Maps</a>
+            <div class="venue-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1899.3392263957603!2d-63.1733962!3d-17.8068029!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93f1e845f65690ed%3A0x601ac2595e511e48!2sANA%20MARIA%20EVENTOS%20SUR!5e0!3m2!1ses!2sbo!4v1770473664195!5m2!1ses!2sbo"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- Calendario -->
+    <section class="calendar-section">
+        <h2>Guarda la Fecha</h2>
+        <div class="calendar-container">
+            <div class="calendar-header">
+                <h4 id="calendarMonth">Marzo 2026</h4>
+            </div>
+            <div class="calendar-grid">
+                <div class="day-name">LU</div>
+                <div class="day-name">MA</div>
+                <div class="day-name">MI</div>
+                <div class="day-name">JU</div>
+                <div class="day-name">VI</div>
+                <div class="day-name">SA</div>
+                <div class="day-name">DO</div>
+                <!-- Los días se generarán dinámicamente con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Cronograma del Evento -->
+    <section class="timeline">
+        <h2>Cronograma del Día</h2>
+        <ul class="timeline-list">
+            <li class="timeline-item">
+                <div class="timeline-icon">💒</div>
+                <div class="timeline-content">
+                    <h3>Ceremonia</h3>
+                    <p class="time">14:00 hrs</p>
+                    <p class="description">Ceremonia religiosa en la Iglesia San José</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="timeline-icon">🥂</div>
+                <div class="timeline-content">
+                    <h3>Cóctel de Bienvenida</h3>
+                    <p class="time">15:30 hrs</p>
+                    <p class="description">Bebidas y canapés en el jardín</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="timeline-icon">🍽️</div>
+                <div class="timeline-content">
+                    <h3>Banquete</h3>
+                    <p class="time">17:00 hrs</p>
+                    <p class="description">Cena de tres tiempos</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="timeline-icon">💃</div>
+                <div class="timeline-content">
+                    <h3>Recepción y Baile</h3>
+                    <p class="time">19:00 hrs</p>
+                    <p class="description">¡A bailar hasta el amanecer!</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!-- Sugerencia de regalos  mostrar los 2 qr del novio y de la novia estos seran en anchor que envien a una imagen de drive-->
+    <section class="gifts">
+        <h2>¿Qué Regalar?</h2>
+        <p class="gift-suggestion">Tu presencia es el mejor regalo, pero si deseas obsequiarnos algo lo recibiremos con
+            enorme gratitud y felicidad.
+            Gracias por formar parte de nuestro presente y futuro con tu presencia y cariño:</p>
+        <div class="gift-options">
+            <div class="gift-option">
+                <h3>Para el Novio</h3>
+                <a class="map-link" target="_blank"
+                    href="https://drive.google.com/file/d/1z9kowQcEB6yMdyMEovJ7dCkF7wB1F5s2/view?usp=sharing">
+                    Ver QR
+                </a>
+            </div>
+            <div class="gift-option">
+                <h3>Para la Novia</h3>
+                <a class="map-link" target="_blank"
+                    href="https://drive.google.com/file/d/1a3kLyPo8GKR5u-QD8QH5epRclK0M34ko/view?usp=sharing">
+                    Ver QR
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Contador Regresivo -->
+    <section class="countdown">
+        <h2>Cuenta Regresiva</h2>
+        <p class="countdown-subtitle">¡Nos vemos pronto!</p>
+        <div id="timer" class="timer">
+            <div class="timer-unit">
+                <span id="days" class="timer-number">0</span>
+                <span class="timer-label">Días</span>
+            </div>
+            <div class="timer-unit">
+                <span id="hours" class="timer-number">0</span>
+                <span class="timer-label">Horas</span>
+            </div>
+            <div class="timer-unit">
+                <span id="minutes" class="timer-number">0</span>
+                <span class="timer-label">Minutos</span>
+            </div>
+            <div class="timer-unit">
+                <span id="seconds" class="timer-number">0</span>
+                <span class="timer-label">Segundos</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Confirmación de Asistencia -->
+    <section class="rsvp">
+        <h2>Confirma tu Asistencia</h2>
+        <p>Por favor, confirma antes del 15 de Marzo</p>
+        <p class="passes-info">Número de pases: <strong id="numPases">2</strong></p>
+        <button class="rsvp-btn" id="openRsvpModal">Confirmar Asistencia</button>
+    </section>
+
+    <!-- Modal de Confirmación -->
+    <div id="rsvpModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Confirmación de Asistencia</h2>
+            <form id="rsvpForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo *</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                <div class="form-group">
+                    <label for="asistencia">Confirmas tu asistencia? *</label>
+                    <select id="asistencia" name="asistencia" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="Si">Sí, asistiré</option>
+                        <option value="No">No podré asistir</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="acompanantes">Número de acompañantes</label>
+                    <input type="number" id="acompanantes" name="acompanantes" min="0" max="10" value="0">
+                    <small id="acompanantesHelp" class="form-help">Incluye tu asistencia (máximo: <span
+                            id="maxPases">2</span> pases)</small>
+                    <small id="acompanantesError" class="form-error" style="display: none;">El número excede los pases
+                        asignados</small>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje (opcional)</label>
+                    <textarea id="mensaje" name="mensaje" rows="3"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Enviar Confirmación</button>
+                <div id="formMessage" class="form-message"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Con amor, David & Marioly ❤️</p>
+        <p class="footer-date">26.03.2026</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
