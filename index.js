@@ -153,10 +153,39 @@ document.addEventListener('DOMContentLoaded', function () {
     // Cargar galería de fotos
     loadGallery();
 
-    // Leer número de pases desde URL
+    // Leer número de p desde URL
     const urlParams = new URLSearchParams(window.location.search);
-    const numPases = urlParams.get('pases') || '2';
+    //codigo desde la a=1 b=2 c=3 d=4 e=5 f=6
+    let numPases = urlParams.get('p') || 'b';
+    if (isNaN(numPases)) {
+        switch (numPases.toLowerCase()) {
+            case 'a':
+                numPases = 1;
+                break;
+            case 'b':
+                numPases = 2;
+                break;
+            case 'c':
+                numPases = 3;
+                break;
+            case 'd':
+                numPases = 4;
+                break;
+            case 'e':
+                numPases = 5;
+                break;
+            case 'f':
+                numPases = 6;
+                break;
+            default:
+                numPases = 2; // Valor por defecto si no se reconoce el código
+        }
+    } else {
+        numPases = parseInt(2) || 2; // Valor por defecto si no es un número válido
+    }
+
     const pasesElement = document.getElementById('numPases');
+
     if (pasesElement) {
         pasesElement.textContent = numPases;
     }
