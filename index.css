@@ -53,7 +53,7 @@ h1, h2, h3 {
   position: relative;
   height: 100vh;
   background: linear-gradient(rgba(145, 175, 200, 0.5), rgba(145, 175, 200, 0.7)),
-              url('assets/images/principal.jpg') center/cover;
+              url('https://pub-674ae31d25e8427aad17ec6fc911d1de.r2.dev/dd1a92eb-e076-42fc-9b59-e9ac0ae4e742.jpg.jpeg') center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -698,7 +698,7 @@ audio::-webkit-media-controls-time-remaining-display {
 .countdown {
   padding: 80px 20px;
   background: linear-gradient(135deg, rgba(145, 175, 200, 0.8), rgba(102, 126, 234, 0.8)),
-              url('assets/images/fondo-contador.jpg') center/cover;
+              url('https://pub-674ae31d25e8427aad17ec6fc911d1de.r2.dev/fondo-contador.jpg') center/cover;
   color: white;
   text-align: center;
 }

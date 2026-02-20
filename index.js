@@ -38,14 +38,14 @@ function loadGallery() {
 
     // Configuración de la galería
     // Para agregar más imágenes: 
-    // 1. Sube las fotos a la carpeta assets/images/carusel/
-    // 2. Nómbralas con números secuenciales: 14.jpg, 15.jpg, etc.
+    // 1. Sube las fotos a Cloudflare R2
+    // 2. Nómbralas con números secuenciales: 20.jpg, 21.jpg, etc.
     // 3. Actualiza el valor de 'totalImages' abajo
     const galleryConfig = {
-        folder: 'assets/images/carusel/',
+        folder: 'https://pub-674ae31d25e8427aad17ec6fc911d1de.r2.dev/carusel/',
         imagePrefix: '',
         imageExtension: '.jpg',
-        totalImages: 14, // Número total de imágenes (00.jpg a 13.jpg)
+        totalImages: 20, // Número total de imágenes (00.jpg a 19.jpg)
         startIndex: 0     // Índice de inicio
     };
 
