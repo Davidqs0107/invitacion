@@ -633,6 +633,67 @@ audio::-webkit-media-controls-time-remaining-display {
   color: #666;
 }
 
+/* Sección de Vestimenta */
+.dress-code {
+  padding: 80px 20px;
+  background: white;
+  text-align: center;
+}
+
+.dress-code-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.dress-code-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.dress-code h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.dress-code-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2.5rem;
+  font-style: italic;
+}
+
+.dress-code-box {
+  background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+  padding: 35px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent;
+  background-image: 
+    linear-gradient(white, white) padding-box,
+    linear-gradient(135deg, #667eea 0%, #91afc8 50%, #764ba2 100%) border-box;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.dress-code-type {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea 0%, #91afc8 50%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.dress-code-description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
 /* Sección de Regalos */
 .gifts {
   padding: 80px 20px;
